@@ -3,9 +3,9 @@
 
 
 class Alimento
-	attr_reader :nombre
-	def initialize nombre
-		@nombre = nombre
+	attr_reader :nombre, :proteinas, :glucidos, :lipidos
+	def initialize nombre, proteinas, glucidos, lipidos
+		@nombre, @proteinas, @glucidos, @lipidos = nombre, proteinas, glucidos, lipidos
 	end
 	
 end
