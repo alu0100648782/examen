@@ -21,5 +21,8 @@ describe Alimentos do
     it "el alimento debe contener grasas" do
        expect(@a1.lipidos).to be == 1.0
     end
+    it "valor energetico del huevo" do
+       expect(@a2.valor_energetico).to be == 34
+    end
   end
 end
