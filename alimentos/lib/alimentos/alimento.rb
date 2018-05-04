@@ -13,7 +13,10 @@ class Alimento
             @aux = (@glucidos * 4) + (@lipidos * 9) + (@proteinas * 4)
             @aux
         end
-	
+
+        def to_s
+		"#{nombre}, #{proteinas}, #{glucidos}, #{lipidos}"
+        end	
         def <=> (other)
             self.valor_energetico <=> other.valor_energetico
         end
