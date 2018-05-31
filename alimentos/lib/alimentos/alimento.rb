@@ -42,3 +42,22 @@ end
 
      p mi_funcion2(lista)
 
+     def mi_funcionx(l)
+      
+      l.map { |p| p.nombre }
+     end
+
+     p mi_funcionx(lista)
+   
+  
+     
+     def mi_funcionxx(l)
+      l.collect {|p| p.valor_energetico}
+     end
+
+     p mi_funcionxx(lista)
+     
+    # p lista.map { |p| p.nombre }
+
+
+

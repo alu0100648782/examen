@@ -28,6 +28,10 @@ describe Alimentos do
     def mi_funcion4(l)
       (l.max)
     end
+    
+    def mi_funcion_sacar_nombres(l)
+       l.map { |p| p.nombre }
+    end
 
     it "debe existir un nombre para el alimento" do
        expect(@a1.nombre).to be == "pan"
@@ -44,6 +48,8 @@ describe Alimentos do
     it "nombre del alimento con el minimo valor energetico" do
        expect(mi_funcion3(@lista)).to eq (@a1)
     end 
-    
+    it "los nombres de los productos" do
+       expect(mi_funcion_sacar_nombres(@lista)).to eq ["pan", "huevo", "carne"]
+    end    
   end
 end
